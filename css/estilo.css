@@ -1,0 +1,128 @@
+/* Variaveis com as cores do site*/
+/* Nome das cores foram pegas da internet, optei por usar variaveis pois fica mais fácil para testar*/
+:root {
+    --sandLight: #e1b382;
+    --sand: #c89666;
+    --lightBlue: #2d545e;
+    --blue: #12343b;
+}
+
+/* Menu de navegação */
+.horizontal-menu {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+
+.horizontal-menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.horizontal-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid var(--sandLight);
+}
+
+.horizontal-menu li a:hover {
+    background-color: var(--sandLight);
+    color: var(--blue);
+}
+
+/* Elementos HTML */
+
+body {
+    background-color: var(--sandLight);
+}
+
+/* Estilo personalizado para a página 1 */
+h1 {
+    text-align: center;
+    color: var(--blue);
+}
+
+h3, h4 {
+    color: var(--blue)
+}
+
+p {
+    font-size: 18px;
+    color: var(--lightBlue)
+}
+
+footer {
+    background-color: var(--blue);
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    color: var(--sandLight);
+}
+
+/* Ids e classes */
+
+.alinhar {
+    text-align: center;
+
+}
+
+.conteudo {
+    width: 70%;
+    margin: auto;
+}
+
+.lista {
+    display: list-item;        
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+/* Formulário */
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--sand);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: var(--blue)
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: var(--blue);
+    color: var(--sand);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--lightBlue);
+}
